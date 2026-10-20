@@ -1,0 +1,551 @@
+% Program 1: Demonstration of Basic MATLAB Library Functions
+clc;
+clear;
+close all;
+
+% Initialize variables
+a = 25;
+b = -15.75;
+c = 4.6;
+
+% Demonstrate built-in mathematical functions
+result1 = sqrt(a);
+result2 = abs(b);
+result3 = round(c);
+result4 = ceil(c);
+result5 = floor(c);
+result6 = factorial(5);
+
+% Display the results
+fprintf('Square root of %d = %.2f\n', a, result1);
+fprintf('Absolute value of %.2f = %.2f\n', b, result2);
+fprintf('Rounded value of %.1f = %d\n', c, result3);
+fprintf('Ceiling value of %.1f = %d\n', c, result4);
+fprintf('Floor value of %.1f = %d\n', c, result5);
+fprintf('Factorial of 5 = %d\n', result6);
+```[cite: 4]
+
+### Output
+```text
+Square root of 25 = 5.00
+Absolute value of -15.75 = 15.75
+Rounded value of 4.6 = 5
+Ceiling value of 4.6 = 5
+Floor value of 4.6 = 4
+Factorial of 5 = 120
+```[cite: 4]
+
+---
+
+## Ex. No. 2: BASIC MATLAB PROGRAM USING MATLAB TOOLS
+
+**Experiment Name / Question:** Basic MATLAB Program Using MATLAB Tools[cite: 4]
+
+### Aim
+To develop and execute a simple MATLAB program using the Command Window, Editor, and Workspace to perform basic arithmetic operations[cite: 4].
+
+### Program Coding (`program2.m`)
+```matlab
+% Program 2: Basic MATLAB Program
+clc;
+clear;
+close all;
+
+% Declare variables
+a = 20;
+b = 10;
+
+% Perform arithmetic operations
+addition = a + b;
+subtraction = a - b;
+multiplication = a * b;
+division = a / b;
+
+% Display the results
+fprintf('First Number: %d\n', a);
+fprintf('Second Number: %d\n', b);
+fprintf('Addition: %d\n', addition);
+fprintf('Subtraction: %d\n', subtraction);
+fprintf('Multiplication: %d\n', multiplication);
+fprintf('Division: %.2f\n', division);
+```[cite: 4]
+
+### Output
+```text
+First Number: 20
+Second Number: 10
+Addition: 30
+Subtraction: 10
+Multiplication: 200
+Division: 2.00
+```[cite: 4]
+
+---
+
+## Ex. No. 4: MATLAB DATA TYPES AND CONSTANTS
+
+**Experiment Name / Question:** MATLAB Data Types and Constants[cite: 4]
+
+### Aim
+To write and execute a MATLAB program to demonstrate different data types, such as integer, floating-point, character, string, and logical values, along with predefined mathematical constants[cite: 4].
+
+### Program Coding (`program4.m`)
+```matlab
+% Program 4: MATLAB Data Types and Constants
+clc;
+clear;
+close all;
+
+% Different data types
+a = int32(25);
+b = 45.75;
+c = 'A';
+d = "Information Literacy";
+e = true;
+
+% Predefined constants
+p = pi;
+x = Inf;
+y = NaN;
+
+% Display values and data types
+fprintf('Integer Value: %d\n', a);
+fprintf('Data Type: %s\n\n', class(a));
+fprintf('Double Value: %.2f\n', b);
+fprintf('Data Type: %s\n\n', class(b));
+fprintf('Character Value: %c\n', c);
+fprintf('Data Type: %s\n\n', class(c));
+fprintf('String Value: %s\n', d);
+fprintf('Data Type: %s\n\n', class(d));
+fprintf('Logical Value: %d\n', e);
+fprintf('Data Type: %s\n\n', class(e));
+
+% Display predefined constants
+fprintf('Value of pi: %.4f\n', p);
+fprintf('Value of Inf: %g\n', x);
+fprintf('Value of NaN: %g\n', y);
+```[cite: 4]
+
+### Output
+```text
+Command Window:
+Integer Value: 25
+Data Type: int32
+
+Double Value: 45.75
+Data Type: double
+
+Character Value: A
+Data Type: char
+
+String Value: Information Literacy
+Data Type: string
+
+Logical Value: 1
+Data Type: logical
+
+Value of pi: 3.1416
+Value of Inf: Inf
+Value of NaN: NaN
+```[cite: 4]
+
+---
+
+## Ex. No. 5: MATLAB VARIABLES AND OPERATORS
+
+**Experiment Name / Question:** MATLAB Variables and Operators[cite: 4]
+
+### Aim
+To develop and execute a MATLAB program using variables and different arithmetic, relational, and logical operators to perform mathematical operations and evaluate conditions[cite: 4].
+
+### Program Coding (`program5.m`)
+```matlab
+% Program 5: Variables and Operators in MATLAB
+clc;
+clear;
+close all;
+
+% Initialize variables
+a = 20;
+b = 10;
+
+% Arithmetic operators
+addition = a + b;
+subtraction = a - b;
+multiplication = a * b;
+division = a / b;
+modulus = mod(a, b);
+
+% Relational operators
+greater = a > b;
+less = a < b;
+equal = a == b;
+notEqual = a ~= b;
+
+% Logical operators
+logicalAnd = (a > 10) && (b < 20);
+logicalOr = (a < 10) || (b > 5);
+logicalNot = ~(a == b);
+
+% Display arithmetic results
+fprintf('Arithmetic Operations\n');
+fprintf('Addition: %d\n', addition);
+fprintf('Subtraction: %d\n', subtraction);
+fprintf('Multiplication: %d\n', multiplication);
+fprintf('Division: %.2f\n', division);
+fprintf('Modulus: %d\n\n', modulus);
+
+% Display relational results
+fprintf('Relational Operations\n');
+fprintf('a > b: %d\n', greater);
+fprintf('a < b: %d\n', less);
+fprintf('a == b: %d\n', equal);
+fprintf('a ~= b: %d\n\n', notEqual);
+
+% Display logical results
+fprintf('Logical Operations\n');
+fprintf('AND: %d\n', logicalAnd);
+fprintf('OR: %d\n', logicalOr);
+fprintf('NOT: %d\n', logicalNot);
+```[cite: 4]
+
+### Output
+```text
+Command Window:
+Arithmetic Operations
+Addition: 30
+Subtraction: 10
+Multiplication: 200
+Division: 2.00
+Modulus: 0
+
+Relational Operations
+a > b: 1
+a < b: 0
+a == b: 0
+a ~= b: 1
+
+Logical Operations
+AND: 1
+OR: 1
+NOT: 1
+```[cite: 4]
+
+---
+
+## Ex. No. 6(A): FACTORIAL OF A NUMBER USING A FOR LOOP
+
+**Experiment Name / Question:** Factorial of a Number Using For Loop[cite: 4]
+
+### Aim
+To write and execute a MATLAB program to calculate the factorial of a given number using a `for` loop[cite: 4].
+
+### Program Coding (`factorial.m`)
+```matlab
+% Factorial using For Loop
+clc;
+clear;
+
+n = input('Enter a number: ');
+fact = 1;
+
+for i = 1:n
+    fact = fact * i;
+end
+
+fprintf('Factorial of %d = %d\n', n, fact);
+```[cite: 4]
+
+### Output
+```text
+Enter a number: 5
+Factorial of 5 = 120
+```[cite: 4]
+
+---
+
+## Ex. No. 6(B): FIBONACCI SERIES USING A FOR LOOP
+
+**Experiment Name / Question:** Fibonacci Series Using For Loop[cite: 4]
+
+### Aim
+To develop a MATLAB program to generate the Fibonacci series up to a specified number of terms using a `for` loop[cite: 4].
+
+### Program Coding (`fibonacci.m`)
+```matlab
+% Fibonacci Series using For Loop
+clc;
+clear;
+
+n = input('Enter the number of terms: ');
+a = 0;
+b = 1;
+
+fprintf('Fibonacci Series:\n');
+for i = 1:n
+    fprintf('%d ', a);
+    
+    c = a + b;
+    a = b;
+    b = c;
+end
+fprintf('\n');
+```[cite: 4]
+
+### Output
+```text
+Enter the number of terms: 10
+Fibonacci Series:
+0 1 1 2 3 5 8 13 21 34
+```[cite: 4]
+
+---
+
+## Ex. No. 6(C): SUM OF N NATURAL NUMBERS USING A FOR LOOP
+
+**Experiment Name / Question:** Sum of N- Natural Numbers Using For Loop[cite: 4]
+
+### Aim
+To develop a MATLAB program to calculate the sum of the first N natural numbers using a `for` loop[cite: 4].
+
+### Program Coding (`sum_natural.m`)
+```matlab
+% Sum of N Natural Numbers
+clc;
+clear;
+
+n = input('Enter the number of terms: ');
+sum = 0;
+
+for i = 1:n
+    sum = sum + i;
+end
+
+fprintf('Sum of first %d natural numbers = %d\n', n, sum);
+```[cite: 4]
+
+### Output
+```text
+Enter the number of terms: 10
+Sum of first 10 natural numbers = 55
+```[cite: 4]
+
+---
+
+## Ex. No. 7: SWITCH-CASE STATEMENT IN MATLAB
+
+**Experiment Name / Question:** Switch-Case Statement in MATLAB[cite: 4]
+
+### Aim
+To develop and execute a MATLAB program using the `switch-case` statement to perform basic arithmetic operations based on the user's choice[cite: 4].
+
+### Program Coding (`program7.m`)
+```matlab
+% Program 7: Switch-Case Statement
+clc;
+clear;
+close all;
+
+% Read two numbers
+a = input('Enter the first number: ');
+b = input('Enter the second number: ');
+
+% Display menu
+fprintf('\nArithmetic Operations\n');
+fprintf('1. Addition\n');
+fprintf('2. Subtraction\n');
+fprintf('3. Multiplication\n');
+fprintf('4. Division\n');
+
+% Read user's choice
+choice = input('Enter your choice: ');
+
+% Switch-case statement
+switch choice
+    case 1
+        result = a + b;
+        fprintf('Addition = %.2f\n', result);
+    case 2
+        result = a - b;
+        fprintf('Subtraction = %.2f\n', result);
+    case 3
+        result = a * b;
+        fprintf('Multiplication = %.2f\n', result);
+    case 4
+        if b ~= 0
+            result = a / b;
+            fprintf('Division = %.2f\n', result);
+        else
+            fprintf('Division by zero is not allowed.\n');
+        end
+   otherwise
+        fprintf('Invalid choice.\n');
+end
+```[cite: 4]
+
+### Output
+```text
+Sample Output 1: Addition
+Enter the first number: 20
+Enter the second number: 10
+
+Arithmetic Operations
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter your choice: 1
+Addition = 30.00
+
+Sample Output 2: Multiplication
+Enter the first number: 15
+Enter the second number: 5
+
+Arithmetic Operations
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter your choice: 3
+Multiplication = 75.00
+
+Sample Output 3: Division
+Enter the first number: 20
+Enter the second number: 4
+
+Arithmetic Operations
+1. Addition
+2. Subtraction
+3. Multiplication
+4. Division
+Enter your choice: 4
+Division = 5.00
+```[cite: 4]
+
+---
+
+## Ex. No. 8: BREAK AND CONTINUE STATEMENTS IN MATLAB
+
+**Experiment Name / Question:** Break and Continue Statements in MATLAB[cite: 4]
+
+### Aim
+To develop and execute a MATLAB program using `break` and `continue` statements to control the execution of loops[cite: 4].
+
+### Program Coding (`program8.m`)
+```matlab
+% Program 8: Break and Continue Statements
+clc;
+clear;
+close all;
+
+% Demonstration of break statement
+fprintf('Break Statement:\n');
+for i = 1:10
+    if i == 6
+        break;
+    end
+    fprintf('%d ', i);
+end
+fprintf('\n\n');
+
+% Demonstration of continue statement
+fprintf('Continue Statement:\n');
+for j = 1:10
+    if j == 6
+        continue;
+    end
+    fprintf('%d ', j);
+end
+fprintf('\n');
+```[cite: 4]
+
+### Output
+```text
+Command Window:
+Break Statement:
+1 2 3 4 5 
+
+Continue Statement:
+1 2 3 4 5 7 8 9 10
+```[cite: 4]
+
+---
+
+## Ex. No. 9: VECTOR OPERATIONS IN MATLAB
+
+**Experiment Name / Question:** Vector Operations in MATLAB[cite: 4]
+
+### Aim
+To develop and execute a MATLAB program to create vectors and perform basic mathematical operations, indexing, sorting, and statistical operations on vectors[cite: 4].
+
+### Program Coding (`program9.m`)
+```matlab
+% Program 9: Vector Operations in MATLAB
+clc;
+clear;
+close all;
+
+% Create vectors
+A = [10 20 30 40 50];
+B = [2 4 6 8 10];
+
+% Display vectors
+disp('Vector A:');
+disp(A);
+disp('Vector B:');
+disp(B);
+
+% Arithmetic operations
+addition = A + B;
+subtraction = A - B;
+multiplication = A .* B;
+
+% Vector indexing
+element = A(3);
+
+% Statistical operations
+total = sum(A);
+maximum = max(A);
+minimum = min(A);
+average = mean(A);
+
+% Sorting
+sorted = sort([30 10 50 20 40]);
+
+% Display results
+disp('Addition:');
+disp(addition);
+disp('Subtraction:');
+disp(subtraction);
+disp('Element-wise Multiplication:');
+disp(multiplication);
+fprintf('Third element of A: %d\n', element);
+fprintf('Sum of A: %d\n', total);
+fprintf('Maximum of A: %d\n', maximum);
+fprintf('Minimum of A: %d\n', minimum);
+fprintf('Mean of A: %.2f\n', average);
+disp('Sorted Vector:');
+disp(sorted);
+```[cite: 4]
+
+### Output
+```text
+Command Window:
+Vector A:
+    10    20    30    40    50
+Vector B:
+     2     4     6     8    10
+Addition:
+    12    24    36    48    60
+Subtraction:
+     8    16    24    32    40
+Element-wise Multiplication:
+    20    80   180   320   500
+Third element of A: 30
+Sum of A: 150
+Maximum of A: 50
+Minimum of A: 10
+Mean of A: 30.00
+Sorted Vector:
+    10    20    30    40    50
+```[cite: 4]
